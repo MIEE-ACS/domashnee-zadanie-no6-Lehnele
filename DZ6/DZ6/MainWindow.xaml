@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DZ6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="650" Name="window">
+        Title="DZ2. Группа УТС-21. Догадкин Даниил. Вариант №7" Height="350" Width="650" Name="window">
     <Grid>
         <TextBox Name="a" HorizontalAlignment="Left" Margin="100,82,0,0" Text="A" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="b" HorizontalAlignment="Left" Margin="100,144,0,0" Text="B" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
