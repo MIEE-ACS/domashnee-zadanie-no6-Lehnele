@@ -24,11 +24,8 @@ namespace DZ6
         List<Triangle> Triangles = new List<Triangle>();
         public MainWindow()
         {
-
-            InitializeComponent();
-
-           
-    }
+            InitializeComponent();    
+        }
 
         public abstract class Triangle
         {
