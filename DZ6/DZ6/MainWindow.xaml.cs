@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,16 +20,14 @@ namespace DZ6
     /// </summary>
     public partial class MainWindow : Window
     {
-        
         List<Triangle> Triangles = new List<Triangle>();
         public MainWindow()
         {
-            InitializeComponent();    
-        }
+            InitializeComponent();
+    }
 
         public abstract class Triangle
         {
-           public Exception inCorrectData = new Exception("Это не прямоугольный треугольник!");
             public double A { get; private set; }
             public double B { get; private set; }
             public double V { get; private set; }
@@ -99,8 +97,8 @@ namespace DZ6
             {
                 if ( v != 90)
                 {
-
-                    throw inCorrectData;
+                    throw new Exception("Это не равносторонний треугольник!");
+                    //MessageBox.Show("Это не равносторонний треугольник!");
                 }
             }
         }
@@ -125,9 +123,9 @@ namespace DZ6
                         break;
                 }
             }
-            catch (System.FormatException)
-            {   
-                    window.Background = Brushes.Red;         
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.ToString());  
             }
     
         }
